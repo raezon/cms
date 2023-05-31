@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/third-party.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/third-party.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('third_party')}}
                 </span>
@@ -29,7 +29,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="mb-0">{{translate('twilio_SMS')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/twilio.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/twilio.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <div>
@@ -96,7 +96,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="mb-0">{{translate('2factor_sms')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/2factor.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/2factor.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <div>
@@ -144,7 +144,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="mb-0">{{translate('signalwire_SMS')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/signalwire.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/signalwire.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <div>
@@ -210,7 +210,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="mb-0">{{translate('nexmo_SMS')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/nexmo.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/nexmo.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <div>
@@ -270,7 +270,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center text-uppercase mb-1">
                             <h5 class="mb-0">{{translate('msg91_SMS')}}</h5>
                             <div class="pl-2">
-                                <img src="{{asset('public/assets/admin/img/msg91.png')}}" alt="public" style="height: 50px">
+                                <img src="{{asset('assets/admin/img/msg91.png')}}" alt="public" style="height: 50px">
                             </div>
                         </div>
                         <div>

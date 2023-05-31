@@ -18,20 +18,20 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Font -->
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/theme.minc619.css?v=1.0">
     <script
-        src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
+        src="{{asset('assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/toastr.css">
 
     {{--stripe--}}
     <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
     <script src="https://js.stripe.com/v3/"></script>
     {{--stripe--}}
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/bootstrap.css">
 
 </head>
 <!-- Body-->
@@ -42,7 +42,7 @@
         <div class="col-md-12">
             <div id="loading" style="display: none;">
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
-                    <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}">
+                    <img width="200" src="{{asset('assets/admin/img/loader.gif')}}">
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                                         <input type="hidden" value="{{ csrf_token() }}" name="_token"/>
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="100"
-                                                 src="{{asset('public/assets/admin/img/sslcomz.png')}}"/>
+                                                 src="{{asset('assets/admin/img/sslcomz.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -106,7 +106,7 @@
                                     <button class="btn btn-block click-if-alone" type="button"
                                             onclick="{{\App\CentralLogics\Helpers::currency_code()=='INR'?"$('.razorpay-payment-button').click()":"toastr.error('Your currency is not supported by Razor Pay.')"}}">
                                         <img width="100"
-                                             src="{{asset('public/assets/admin/img/razorpay.png')}}"/>
+                                             src="{{asset('assets/admin/img/razorpay.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                         {{ csrf_field() }}
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="100"
-                                                 src="{{asset('public/assets/admin/img/paypal.png')}}"/>
+                                                 src="{{asset('assets/admin/img/paypal.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -140,7 +140,7 @@
                                 <div class="card-body" style="height: 70px">
                                     @php($config=\App\CentralLogics\Helpers::get_business_settings('stripe'))
                                     <button class="btn btn-block click-if-alone" type="button" id="checkout-button">
-                                        <img width="100" src="{{asset('public/assets/admin/img/stripe.png')}}"/>
+                                        <img width="100" src="{{asset('assets/admin/img/stripe.png')}}"/>
                                     </button>
                                     <script type="text/javascript">
                                         // Create an instance of the Stripe object with your publishable API key
@@ -208,7 +208,7 @@
                                     <button class="btn btn-block" type="button"
                                             onclick="$('.paystack-payment-button').click()">
                                         <img width="100"
-                                             src="{{asset('public/assets/admin/img/paystack.png')}}"/>
+                                             src="{{asset('assets/admin/img/paystack.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
                                     <button class="btn btn-block click-if-alone" type="button"
                                             onclick="{{\App\CentralLogics\Helpers::currency_code()=='MYR'?"document.order.submit()":"toastr.error('Your currency is not supported by Senang Pay.')"}}">
                                         <img width="100"
-                                             src="{{asset('public/assets/admin/img/senangpay.png')}}"/>
+                                             src="{{asset('assets/admin/img/senangpay.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -258,7 +258,7 @@
                             <div class="card">
                                 <div class="card-body" style="height: 70px">
                                     <button class="btn btn-block click-if-alone" id="bKash_button" onclick="BkashPayment()">
-                                        <img width="100" src="{{asset('public/assets/admin/img/bkash.png')}}"/>
+                                        <img width="100" src="{{asset('assets/admin/img/bkash.png')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
                                           action="{!! route('paymob-credit',['order_amount'=>$order_amount,'customer_id'=>$customer['id'],'callback'=>$callback]) !!}">
                                         {{ csrf_field() }}
                                         <button class="btn btn-block click-if-alone">
-                                            <img width="100" src="{{asset('public/assets/admin/img/paymob.png')}}"/>
+                                            <img width="100" src="{{asset('assets/admin/img/paymob.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -289,7 +289,7 @@
                                 <div class="card-body pt-2" style="height: 70px">
                                     <button class="btn btn-block click-if-alone" onclick="location.href='{!! route('mercadopago.index',['order_amount'=>$order_amount,'customer_id'=>$customer['id'],'callback'=>$callback]) !!}'">
                                         <img width="150"
-                                             src="{{asset('public/assets/admin/img/MercadoPago_(Horizontal).svg')}}"/>
+                                             src="{{asset('assets/admin/img/MercadoPago_(Horizontal).svg')}}"/>
                                     </button>
                                 </div>
                             </div>
@@ -306,7 +306,7 @@
 
                                         <button class="btn btn-block click-if-alone" type="submit">
                                             <img width="200"
-                                                 src="{{asset('public/assets/admin/img/fluterwave.png')}}"/>
+                                                 src="{{asset('assets/admin/img/fluterwave.png')}}"/>
                                         </button>
                                     </form>
                                 </div>
@@ -380,10 +380,10 @@
 </div>
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/admin')}}/js/jquery.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/bootstrap.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
+<script src="{{asset('assets/admin')}}/js/jquery.js"></script>
+<script src="{{asset('assets/admin')}}/js/bootstrap.js"></script>
+<script src="{{asset('assets/admin')}}/js/sweet_alert.js"></script>
+<script src="{{asset('assets/admin')}}/js/toastr.js"></script>
 {!! Toastr::message() !!}
 
 <script>

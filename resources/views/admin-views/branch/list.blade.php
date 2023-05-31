@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/branch.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/branch.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('branch_list')}}
                 </span>
@@ -69,7 +69,7 @@
                                 <td>
                                     <div class="media align-items-center gap-3">
                                         <img width="50" class="rounded"
-                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                 src="{{asset('storage/app/public/branch')}}/{{$branch['image']}}">
                                         <div class="media-body">
                                             {{$branch['name']}} @if($branch['id']==1)

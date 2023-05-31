@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/campaign.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/campaign.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Promotion_Setup')}}
                 </span>
@@ -70,7 +70,7 @@
                                         <div class="form-group">
                                             <div class="text-center">
                                                 <img style="height:170px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                                     src="{{ asset('public/assets/admin/img/400x400/img2.jpg') }}" alt="image" />
+                                                     src="{{ asset('assets/admin/img/400x400/img2.jpg') }}" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@
                                     @else
                                         <div>
                                             <img width="100" src="{{asset('storage/app/public/promotion')}}/{{$promotion['promotion_name']}}"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'">
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
                                         </div>
                                     @endif
                                 </td>

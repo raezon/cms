@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" src="{{asset('public/assets/admin')}}/vendor/apex/apexcharts.css"></link>
+    <link rel="stylesheet" src="{{asset('assets/admin')}}/vendor/apex/apexcharts.css"></link>
 @endpush
 
 @section('content')
@@ -28,7 +28,7 @@
                 <div class="row justify-content-between align-items-center g-2 mb-3">
                     <div class="col-auto">
                         <h4 class="d-flex align-items-center gap-10 mb-0">
-                            <img width="20" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/business_analytics.png')}}" alt="Business Analytics">
+                            <img width="20" class="avatar-img rounded-0" src="{{asset('assets/admin/img/icons/business_analytics.png')}}" alt="Business Analytics">
                             {{translate('Business_Analytics')}}
                         </h4>
                     </div>
@@ -59,7 +59,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between flex-wrap gap-2 align-items-center">
                             <h4 class="d-flex align-items-center text-capitalize gap-10 mb-0">
-                                <img width="20" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/earning_statistics.png')}}" alt="">
+                                <img width="20" class="avatar-img rounded-0" src="{{asset('assets/admin/img/icons/earning_statistics.png')}}" alt="">
                                 {{translate('order_statistics')}}
                             </h4>
 
@@ -153,7 +153,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between flex-wrap gap-2 align-items-center">
                             <h4 class="d-flex align-items-center text-capitalize gap-10 mb-0">
-                                <img width="20" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/earning_statistics.png')}}" alt="">
+                                <img width="20" class="avatar-img rounded-0" src="{{asset('assets/admin/img/icons/earning_statistics.png')}}" alt="">
                                 {{translate('earning_statistics')}}
                             </h4>
                             <ul class="option-select-btn">
@@ -267,10 +267,10 @@
         @endsection
 
         @push('script')
-            <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
-            <script src="{{asset('public/assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
-            <script src="{{asset('public/assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
-            <script src="{{asset('public/assets/admin')}}/vendor/apex/apexcharts.min.js"></script>
+            <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+            <script src="{{asset('assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+            <script src="{{asset('assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+            <script src="{{asset('assets/admin')}}/vendor/apex/apexcharts.min.js"></script>
         @endpush
 
 

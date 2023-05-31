@@ -2177,7 +2177,7 @@
   'Search by Order ID Status, Transaction Reference' => 'Search by Order ID Status  Transaction Reference',
   'Search by Order ID Status,Transaction Reference' => 'Search by Order ID Status Transaction Reference',
   'Search by Order ID, Status,Transaction Reference' => 'Search by Order ID  Status Transaction Reference',
-  'public/assets/admin/img/icons/all_orders.png' => 'Public/assets/admin/img/icons/all orders.png',
+  'assets/admin/img/icons/all_orders.png' => 'assets/admin/img/icons/all orders.png',
   'Order deliveryman added!' => 'Order deliveryman added!',
   'on_table' => 'On table',
   'ordersetete' => 'Ordersetete',

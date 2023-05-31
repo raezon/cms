@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/banner.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/banner.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Update_Banner')}}
                 </span>
@@ -79,7 +79,7 @@
                                             <div class="upload-file">
                                                 <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
-                                                    <img width="465" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('public/assets/admin/img/icons/upload_img2.png')}}'" alt="">
+                                                    <img width="465" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" onerror="this.src='{{asset('assets/admin/img/icons/upload_img2.png')}}'" alt="">
                                                 </div>
                                             </div>
                                         </div>

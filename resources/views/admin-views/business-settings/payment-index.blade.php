@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/third-party.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/third-party.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('third_party')}}
                 </span>
@@ -108,7 +108,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="185" class="avatar-img" src="{{asset('public/assets/admin/img/icons/ssl.png')}}" alt="">
+                            <img width="185" class="avatar-img" src="{{asset('assets/admin/img/icons/ssl.png')}}" alt="">
                         </center>
 
                             @csrf
@@ -199,7 +199,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('public/assets/admin/img/icons/paypal.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/icons/paypal.png')}}" alt="">
                         </center>
 
                             @if(isset($config))
@@ -531,7 +531,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('public/assets/admin/img/fluterwave.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/fluterwave.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
@@ -580,7 +580,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('public/assets/admin/img/MercadoPago_(Horizontal).svg')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/MercadoPago_(Horizontal).svg')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
