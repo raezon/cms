@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/employee.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/employee.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('employee_role_setup')}}
                 </span>
@@ -88,7 +88,7 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li>
                                     <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.custom-role.excel-export')}}">
-                                        <img width="14" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">
+                                        <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
                                         {{ translate('Excel') }}
                                     </a>
                                 </li>

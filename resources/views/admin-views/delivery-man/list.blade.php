@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/deliveryman.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/deliveryman.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Deliveryman_List')}}
                 </span>
@@ -48,7 +48,7 @@
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li>
                                             <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.delivery-man.excel-export')}}">
-                                                <img width="14" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">
+                                                <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
                                                 {{ translate('Excel') }}
                                             </a>
                                         </li>
@@ -84,7 +84,7 @@
                                             <div class="media gap-3 align-items-center">
                                                 <div class="avatar">
                                                     <img width="60" class="img-fit rounded-circle"
-                                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                        onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                         src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}">
                                                     {{--<span class="d-block font-size-sm">{{$banner['image']}}</span>--}}
                                                 </div>

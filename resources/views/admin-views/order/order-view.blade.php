@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
             <h2 class="h1 mb-0 d-flex align-items-center gap-1">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/order_details.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/order_details.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Order_Details')}}
                 </span>
@@ -194,7 +194,7 @@
 
                                             <img class="img-fluid avatar avatar-lg"
                                                  src="{{asset('storage/app/public/product/')}}/{{$detail->product['image']}}"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                                  alt="Image Description">
 
                                             <div class="media-body text-dark fz-12">
@@ -428,7 +428,7 @@
                             @if($order['order_type']!='take_away' && $order['order_type'] != 'pos' && $order['order_type'] != 'dine_in' && !$order['delivery_man_id'])
 
                                 <a href="#" class="btn btn-primary btn-block d-flex gap-1 justify-content-center align-items-center" data-toggle="modal" data-target="#assignDeliveryMan">
-                                    <img width="17" src="{{asset('public/assets/admin/img/icons/assain_delivery_man.png')}}" alt="">
+                                    <img width="17" src="{{asset('/assets/admin/img/icons/assain_delivery_man.png')}}" alt="">
                                     {{translate('Assign_Delivery_Man')}}
                                 </a>
                             @endif
@@ -463,7 +463,7 @@
                                         </h4>
                                         <div class="media flex-wrap gap-3">
                                             <a target="_blank" class="" href="{{route('admin.customer.view',[$order->customer['id']])}}">
-                                                <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/delivery-man/'.$order->delivery_man->image)}}" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
+                                                <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/delivery-man/'.$order->delivery_man->image)}}" onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
                                             </a>
                                             <div class="media-body d-flex flex-column gap-1">
                                                 <a target="" href="#" class="text-dark"><span>{{$order->delivery_man['f_name'].' '.$order->delivery_man['l_name'] ?? ''}}</span></a>
@@ -489,19 +489,19 @@
                                                 <a target="_blank" class="text-dark"
                                                    title="Delivery Boy Last Location" data-toggle="tooltip" data-placement="top"
                                                    href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$current['latitude']}}+{{$current['longitude']}}">
-                                                    <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$current['location']?? ''}}
+                                                    <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$current['location']?? ''}}
                                                 </a>
                                             @else
                                                 <a href="javascript:" data-toggle="tooltip" class="text-dark"
                                                    data-placement="top" title="{{translate('Waiting for location...')}}">
-                                                    <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Waiting for location...')}}
+                                                    <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Waiting for location...')}}
                                                 </a>
                                             @endif
                                         @else
                                             <a href="javascript:" onclick="last_location_view()" class="text-dark"
                                                data-toggle="tooltip" data-placement="top"
                                                title="{{translate('Only available when order is out for delivery!')}}">
-                                                <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Only available when order is out for delivery!')}}
+                                                <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Only available when order is out for delivery!')}}
                                             </a>
                                         @endif
                                     </div>
@@ -519,7 +519,7 @@
                                         </h4>
 
                                         <div class="edit-btn cursor-pointer" data-toggle="modal" data-target="#deliveryInfoModal">
-                                            {{-- <img width="24" src="{{asset('public/assets/admin/img/icons/edit.png')}}" alt=""> --}}
+                                            {{-- <img width="24" src="{{asset('/assets/admin/img/icons/edit.png')}}" alt=""> --}}
                                             <i class="tio-edit"></i>
                                         </div>
                                     </div>
@@ -551,13 +551,13 @@
                                             @if(isset($address['address']) && isset($address['latitude']) && isset($address['longitude']))
                                             <a target="_blank" class="text-dark"
                                                href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$address['latitude']}}+{{$address['longitude']}}">
-                                                <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 {{$address['address']}}
                                             </a>
                                             @else
                                             <a target="_blank" class="text-dark"
                                                href="#">
-                                                <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 {{translate('no_location_found')}}
                                             </a>
                                             @endif
@@ -580,7 +580,7 @@
                             </h4>
                             <div class="media flex-wrap gap-3">
                                 <a target="_blank" class="" href="{{route('admin.customer.view',[$order->customer['id']])}}">
-                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/profile/'.$order->customer['image'])}}" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
+                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/profile/'.$order->customer['image'])}}" onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
                                 </a>
                                 <div class="media-body d-flex flex-column gap-1">
                                     <a target="_blank" href="{{route('admin.customer.view',[$order->customer['id']])}}" class="text-dark"><strong>{{$order->customer['f_name'].' '.$order->customer['l_name']}}</strong></a>
@@ -600,7 +600,7 @@
                                 </h4>
                                 <div class="media flex-wrap gap-3 align-items-center">
                                     <a target="#" class="" >
-                                        <img class="avatar avatar-lg rounded-circle" src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="Image">
+                                        <img class="avatar avatar-lg rounded-circle" src="{{asset('/assets/admin/img/160x160/img1.jpg')}}" alt="Image">
                                     </a>
                                     <div class="media-body d-flex flex-column gap-1">
                                         <a target="#"  class="text-dark text-capitalize"><strong>{{translate('walking_customer')}}</strong></a>
@@ -617,7 +617,7 @@
                             </h4>
                             <div class="media flex-wrap gap-3">
                                 <div class="">
-                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/branch/'.$order->branch['image'])}}" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
+                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('storage/app/public/branch/'.$order->branch['image'])}}" onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'" alt="Image">
                                 </div>
                                 <div class="media-body d-flex flex-column gap-1">
                                     <span class="text-dark"><span>{{$order->branch['name']}}</span></span>
@@ -637,7 +637,7 @@
 
                             <hr class="w-100">
                             <div class="d-flex align-items-center text-dark gap-3">
-                                <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">
+                                <img width="13" src="{{asset('/assets/admin/img/icons/location.png')}}" alt="">
                                 <a target="_blank" class="text-dark"
                                     href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$order->branch['latitude']}}+{{$order->branch['longitude']}}">
                                     {{$order->branch['address']}}<br>
@@ -669,7 +669,7 @@
                                 <div class="media align-items-center gap-2 flex-wrap">
                                     <div class="avatar">
                                         <img class="img-fit rounded-circle" loading="lazy" decoding="async"
-                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                         onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                          src="{{asset('/storage/app/public/delivery-man/'.$deliveryMan->image)}}" alt="Jhon Doe">
                                     </div>
                                     <span>{{$deliveryMan['f_name'].' '.$deliveryMan['l_name']}}</span>

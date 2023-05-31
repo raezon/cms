@@ -46,7 +46,7 @@
                                             <div class="upload-file">
                                                 <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
-                                                    <img width="465" id="viewer" src="{{asset('public/assets/admin/img/icons/upload_img2.png')}}" alt="">
+                                                    <img width="465" id="viewer" src="{{asset('/assets/admin/img/icons/upload_img2.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@
                                         <td>
                                             @if($notification['image']!=null)
                                                 <img class="img-vertical-150"
-                                                     onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                                     onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                                      src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}">
                                             @else
                                                 <label class="badge badge-soft-warning">{{translate('No')}} {{translate('image')}}</label>

@@ -13,7 +13,7 @@
             <!-- Page Header -->
             <div class="d-flex flex-wrap gap-2 align-items-center mb-3 border-bottom pb-3">
                 <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                    <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/customer.png')}}" alt="">
+                    <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/customer.png')}}" alt="">
                     <span class="page-header-title">
                         {{translate('customer_Details')}}
                     </span>
@@ -136,7 +136,7 @@
                                 <div class="avatar avatar-xl avatar-circle">
                                     <img
                                         class="img-fit rounded-circle"
-                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                        onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                         src="{{asset('storage/app/public/profile/'.$customer->image)}}"
                                         alt="Image Description">
                                 </div>

@@ -15,7 +15,7 @@
                     <div class="d-flex align-items-center gap-2">
                         <img class="rounded avatar"
                                 src="{{asset('storage/app/public/product')}}/{{ $item->product->image ?? '' }}"
-                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                 alt="{{$product->name}} image">
                         <span class="text-dark font-weight-semibold">
                             {{isset($product)?substr($product->name,0,18) . (strlen($product->name)>18?'...':''):'not exists'}}

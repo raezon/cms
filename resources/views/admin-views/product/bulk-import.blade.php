@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/bulk_import.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/bulk_import.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Bulk_Import')}}
                 </span>
@@ -43,7 +43,7 @@
                         <div class="rest-part">
                             <div class="d-flex flex-wrap justify-content-center gap-3">
                                 <h4 class="mb-0">{{translate('Do_not_have_the_template')}}?</h4>
-                                <a href="{{asset('public/assets/product_bulk_format.xlsx')}}" download=""
+                                <a href="{{asset('/assets/product_bulk_format.xlsx')}}" download=""
                                 class="fz-16 btn-link">{{translate('Download_Here')}}</a>
                             </div>
                             <div class="mt-5">
@@ -53,8 +53,8 @@
                                             <div class="upload-file">
                                                 <input type="file" id="import-file" name="products_file" accept=".xlsx, .xls" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
-                                                    <img src="{{asset('public/assets/admin/img/icons/drug_file.png')}}" alt="">
-{{--                                                    <img src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">--}}
+                                                    <img src="{{asset('/assets/admin/img/icons/drug_file.png')}}" alt="">
+{{--                                                    <img src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">--}}
                                                 </div>
                                                 <div class="file--img"></div>
                                             </div>
@@ -80,7 +80,7 @@
     <script>
         $('#import-file').on('change', function(){
             if($(this)[0].files.length !== 0){
-                $('.file--img').empty().append(`<div class="my-2"> <img width="200" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt=""></div>`)
+                $('.file--img').empty().append(`<div class="my-2"> <img width="200" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt=""></div>`)
             }
         })
         $('.product-form').on('reset', function(){

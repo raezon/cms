@@ -21,7 +21,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/business_setup2.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('business_setup')}}
                 </span>
@@ -69,7 +69,7 @@
                                                 <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
                                                     <img width="150"
-                                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img3.jpg')}}'"
+                                                         onerror="this.src='{{asset('/assets/admin/img/160x160/img3.jpg')}}'"
                                                          src="{{asset('storage/app/public/branch')}}/{{$branch['image']}}" alt="">
                                                 </div>
                                             </div>

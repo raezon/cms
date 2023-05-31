@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
             <h2 class="h1 mb-0 d-flex align-items-center gap-1">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/order_details.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/order_details.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Order_Details')}}
                 </span>
@@ -401,8 +401,8 @@
                                     <td>
                                         <div class="media gap-3">
                                             <img class="img-fluid avatar avatar-lg"
-                                                 src="{{asset('public/assets/admin/img/icons/order_details.png')}}"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                                 src="{{asset('/assets/admin/img/icons/order_details.png')}}"
+                                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                                  alt="Image Description">
 
                                             <div class="media-body text-dark fz-12">
@@ -440,8 +440,8 @@
                                     <td>
                                         <div class="media gap-3">
                                             <img class="img-fluid avatar avatar-lg"
-                                                 src="{{asset('public/assets/admin/img/icons/order_details.png')}}"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                                 src="{{asset('/assets/admin/img/icons/order_details.png')}}"
+                                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                                  alt="Image Description">
 
                                             <div class="media-body text-dark fz-12">
@@ -489,7 +489,7 @@
                             <!-- <div class="media">
                                 <div class="avatar avatar-xl mr-3">
                                     <img class="img-fluid"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                            onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                             src="{{asset('storage/app/public/product')}}/{{$detail->product['image']}}"
                                             alt="Image Description">
                                 </div>
@@ -612,7 +612,7 @@
                             </h4>
                             <div class="media flex-wrap gap-3">
                                 <div class="">
-                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" onerror="this.src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="Image">
+                                    <img class="avatar avatar-lg rounded-circle" src="{{asset('/assets/admin/img/160x160/img1.jpg')}}" onerror="this.src="{{asset('/assets/admin/img/160x160/img1.jpg')}}" alt="Image">
                                 </div>
                                 <div class="media-body d-flex flex-column gap-1">
                                     <span class="text-dark"><strong>{{$order->customer['f_name'].' '.$order->customer['l_name']}}</strong></span>
@@ -658,7 +658,7 @@
                                 <div class="avatar avatar-circle mr-3">
                                     <img
                                         class="avatar-img" style="width: 75px"
-                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                        onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                         src="{{asset('storage/app/public/profile/'.$order->customer->image)}}"
                                         alt="Image Description">
                                 </div>

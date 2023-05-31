@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/deliveryman.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/deliveryman.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('update_Deliveryman')}}
                 </span>
@@ -118,7 +118,7 @@
                                         </div>
                                         <center class="mt-3">
                                             <img class="upload-img-view" id="viewer"
-                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                 src="{{asset('storage/app/public/delivery-man').'/'.$delivery_man['image']}}" alt="delivery-man image"/>
                                         </center>
                                     </div>
@@ -126,7 +126,7 @@
                                     @foreach(json_decode($delivery_man['identity_image'],true) as $img)
                                     <!-- <div class="form-group">
                                         <img height="150"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                            onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                                             src="{{asset('storage/app/public/delivery-man').'/'.$img}}">
                                     </div> -->
                                     @endforeach
@@ -197,7 +197,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -207,7 +207,7 @@
                 groupClassName: 'col-6 col-lg-4 ',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('/assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

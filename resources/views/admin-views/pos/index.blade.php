@@ -13,7 +13,7 @@
             <div class="col-md-12">
                 <div id="loading" class="d--none">
                     <div class="loading-inner">
-                        <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}">
+                        <img width="200" src="{{asset('/assets/admin/img/loader.gif')}}">
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                         @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                         <img class="navbar-brand-logo rounded-circle avatar avatar-lg"
                              style="border: 5px solid #80808012"
-                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                             onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                              src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}"
                              alt="Logo">
                     </a>
@@ -60,7 +60,7 @@
                                     <div class="avatar avatar-sm avatar-circle">
                                         @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                                         <img class="avatar-img"
-                                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                             onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                              src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                              alt="Image">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -73,7 +73,7 @@
                                         <div class="media align-items-center">
                                             <div class="avatar avatar-sm avatar-circle mr-2">
                                                 <img class="avatar-img"
-                                                     onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                     onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                      src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                                      alt="Owner image">
                                             </div>
@@ -142,7 +142,7 @@
                                             <div class="input-group-prepend pl-2">
                                                 <div class="input-group-text">
                                                     <!-- <i class="tio-search"></i> -->
-                                                    <img width="13" src="{{asset('public/assets/admin/img/icons/search.png')}}" alt="">
+                                                    <img width="13" src="{{asset('/assets/admin/img/icons/search.png')}}" alt="">
                                                 </div>
                                             </div>
                                             <input id="datatableSearch" type="search" value="{{$keyword?$keyword:''}}" name="search" class="form-control border-0" placeholder="{{translate('Search here')}}" aria-label="Search here">
@@ -316,10 +316,10 @@
 @push('script_2')
     <!-- JS Implementing Plugins -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/sweet_alert.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/vendor.min.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/theme.min.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/sweet_alert.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/toastr.js"></script>
     {{--{!! Toastr::message() !!}--}}
 
     @if ($errors->any())
@@ -763,7 +763,7 @@
     </script>
     <!-- IE Support -->
     <script>
-        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
     </script>
 
 @endpush

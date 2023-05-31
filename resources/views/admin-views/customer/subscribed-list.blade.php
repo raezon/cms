@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/subscribers.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/subscribers.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Subscribed_Customers')}}&nbsp;
                     <span class="badge badge-soft-dark rounded-50 fz-14"> {{ $newsletters->total() }}</span>

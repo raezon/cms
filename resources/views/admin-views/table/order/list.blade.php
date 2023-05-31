@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/all_orders.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/all_orders.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate($status)}} {{translate('Table_Orders')}}
                 </span>
@@ -71,7 +71,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.list',['confirmed'])}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/confirmed.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/confirmed.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('confirmed')}}</span>
                                     </h6>
                                     <span class="card-title text-107980">
@@ -85,7 +85,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.list',['cooking'])}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/cooking.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/cooking.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('cooking')}}</span>
                                     </h6>
                                     <span class="card-title text-danger">
@@ -99,7 +99,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.list',['done'])}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/review.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/review.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('ready_to_serve')}}</span>
                                     </h6>
                                     <span class="card-title text-00B2BE">
@@ -113,7 +113,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.list',['completed'])}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/product.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/product.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('completed')}}</span>
                                     </h6>
                                     <span class="card-title text-success">
@@ -126,7 +126,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.list',['canceled'])}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/canceled.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/canceled.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('canceled')}}</span>
                                     </h6>
                                     <span class="card-title text-success">
@@ -141,7 +141,7 @@
                             <a class="order--card h-100" href="{{route('admin.table.order.running')}}">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                                        <img src="{{asset('public/assets/admin/img/icons/out_for_delivery.png')}}" alt="dashboard" class="oder--card-icon">
+                                        <img src="{{asset('/assets/admin/img/icons/out_for_delivery.png')}}" alt="dashboard" class="oder--card-icon">
                                         <span>{{translate('running')}}</span>
                                     </h6>
                                     <span class="card-title text-danger">
@@ -185,7 +185,7 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li>
                                     <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.table.order.export-excel', ['search'=>$search, 'from' =>$from, 'to' => $to, 'status'=> $status])}}">
-                                        <img width="14" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">
+                                        <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
                                         {{translate('excel')}}
                                     </a>
                                 </li>

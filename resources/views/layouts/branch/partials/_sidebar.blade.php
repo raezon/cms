@@ -8,10 +8,10 @@
                     @php($restaurant_logo = \App\Model\BusinessSetting::where(['key' => 'logo'])->first()->value)
                     <a class="navbar-brand" href="{{ route('branch.dashboard') }}" aria-label="Front">
                         <img class="navbar-brand-logo" style="object-fit: contain;"
-                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                            onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                             src="{{ asset('storage/app/public/restaurant/' . $restaurant_logo) }}" alt="Logo">
                         <img class="navbar-brand-logo-mini" style="object-fit: contain;"
-                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                            onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                             src="{{ asset('storage/app/public/restaurant/' . $restaurant_logo) }}" alt="Logo">
                     </a>
 

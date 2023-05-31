@@ -3,7 +3,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/product.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/product.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Add_New_Product')}}
                 </span>
@@ -91,14 +91,14 @@
                                         <div class="upload-file">
                                             <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                             <div class="upload-file__img_drag upload-file__img">
-                                                <img width="176" src="{{asset('public/assets/admin/img/icons/upload_img.png')}}" alt="">
+                                                <img width="176" src="{{asset('/assets/admin/img/icons/upload_img.png')}}" alt="">
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- <center style="display: none" id="image-viewer-section" class="pt-2">
                                         <img style="height: 200px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                            src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt="banner image"/>
+                                            src="{{asset('/assets/admin/img/400x400/img2.jpg')}}" alt="banner image"/>
                                     </center> -->
                                 </div>
                             </div>
@@ -334,7 +334,7 @@
 @endpush
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 
     <script>
         function readURL(input) {
@@ -449,7 +449,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/tags-input.min.js"></script>
 
     <script>
         $('#choice_attributes').on('change', function () {

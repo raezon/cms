@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/employee.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/employee.png')}}" alt="">
                 <span class="page-header-title">
                     {{$dm['f_name'].' '.$dm['f_name']}}
                 </span>
@@ -32,7 +32,7 @@
                         <div class="d-flex align-items-center">
                             <div class="avatar avatar-xxl mr-4">
                                 <img class="img-fit"
-                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                 src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
                                 alt="Image Description">
                             </div>
@@ -166,7 +166,7 @@
                                        href="{{route('admin.customer.view',[$review['user_id']])}}">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img" width="75" height="75"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
                                                  alt="Image Description">
                                         </div>
@@ -207,7 +207,7 @@
                             </td>
                             {{-- <td>
                                 @foreach(json_decode($review['attachment'],true) as $attachment)
-                                    <img width="100" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
+                                    <img width="100" onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
                                 @endforeach
                             </td> --}}
                             <td>

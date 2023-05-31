@@ -1,4 +1,4 @@
-<script src="{{asset('public/assets/back-end/js/croppie.js')}}"></script>
+<script src="{{asset('/assets/back-end/js/croppie.js')}}"></script>
 <script>
     function Validate(file) {
         var x;

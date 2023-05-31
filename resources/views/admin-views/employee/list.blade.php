@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -12,7 +12,7 @@
     <!-- Page Header -->
     <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
         <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-            <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/employee.png')}}" alt="">
+            <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/employee.png')}}" alt="">
             <span class="page-header-title">
                 {{translate('employee_List')}}
             </span>
@@ -48,7 +48,7 @@
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li>
                                         <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.employee.excel-export')}}">
-                                            <img width="14" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">
+                                            <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
                                             {{ translate('Excel') }}
                                         </a>
                                     </li>
@@ -81,7 +81,7 @@
                                         <div class="media align-items-center gap-3">
                                             <div class="avatar">
                                                 <img class="img-fit rounded-circle" src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt=""
-                                                     onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                     onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                 >
                                             </div>
                                             <div class="media-body">{{$e['f_name'] . ' ' . $e['l_name']}}</div>
@@ -140,8 +140,8 @@
 
 @push('script')
     <!-- Page level plugins -->
-    <script src="{{asset('public/assets/back-end')}}/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{asset('public/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{asset('/assets/back-end')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <!-- Page level custom scripts -->
     <script>
         // Call the dataTables jQuery plugin

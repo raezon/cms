@@ -12,7 +12,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/product.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/product.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Settings')}}
                 </span>
@@ -79,7 +79,7 @@
                             class="avatar avatar-xxl avatar-circle avatar-border-lg avatar-uploader profile-cover-avatar"
                             for="avatarUploader">
                             <img id="viewer"
-                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                  class="avatar-img"
                                  src="{{asset('storage/app/public/branch')}}/{{auth('branch')->user()->image}}"
                                  alt="Image">

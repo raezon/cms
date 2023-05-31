@@ -11,21 +11,21 @@
                 <li>
                     <a href="{{route('admin.business-settings.restaurant.restaurant-setup')}}">
                         <span>{{translate('Business_Setup')}}</span>
-                        <img width="12" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/business_setup.png')}}" alt="Image Description">
+                        <img width="12" class="avatar-img rounded-0" src="{{asset('/assets/admin/img/icons/business_setup.png')}}" alt="Image Description">
                     </a>
                 </li>
 
                 <li>
                     <a href="{{route('admin.settings')}}">
                         <span>{{translate('profile')}}</span>
-                        <img width="12" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/profile.png')}}" alt="Image Description">
+                        <img width="12" class="avatar-img rounded-0" src="{{asset('/assets/admin/img/icons/profile.png')}}" alt="Image Description">
                     </a>
                 </li>
 
                 <li>
                     <a href="{{route('admin.dashboard')}}">
                         <span>{{translate('Home')}}</span>
-                        <img width="12" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/home.png')}}" alt="Image Description">
+                        <img width="12" class="avatar-img rounded-0" src="{{asset('/assets/admin/img/icons/home.png')}}" alt="Image Description">
                     </a>
                 </li>
                 <li>
