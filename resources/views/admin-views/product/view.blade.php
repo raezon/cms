@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap justify-content-between gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/bulk_import.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/bulk_import.png')}}" alt="">
                 <span class="page-header-title">
                     {{ Str::limit($product['name'], 30) }}
                 </span>
@@ -32,7 +32,7 @@
                         <div class="d-flex align-items-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4"
                                  src="{{asset('storage/app/public/product')}}/{{$product['image']}}"
-                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
+                                 onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                                  alt="Image Description">
                             <div class="d-block">
                                 <h4 class="display-2 text-dark mb-0">
@@ -232,7 +232,7 @@
                                    href="{{route('admin.customer.view',[$review['user_id']])}}">
                                     <div class="avatar avatar-circle">
                                         <img class="avatar-img" width="75" height="75"
-                                             onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
+                                             onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                              @if(isset($review->customer))
                                              src="{{asset('storage/app/public/profile/'.$review->customer->image??'')}}"
                                              @else

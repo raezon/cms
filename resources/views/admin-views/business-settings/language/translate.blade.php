@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('/assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <style>
         td{
             white-space: nowrap;
@@ -82,7 +82,7 @@
 
     @push('script')
         <!-- Page level plugins -->
-            <script src="{{asset('/assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+            <script src="{{asset('assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
             <!-- Page level custom scripts -->
             <script>
                 // Call the dataTables jQuery plugin

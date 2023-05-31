@@ -7,7 +7,7 @@
             <a class="text-dark media align-items-center gap-2" href="{{route('admin.customer.view',[$customer['id']])}}">
                 <div class="avatar">
                     <img src="{{asset('storage/app/public/profile')}}/{{$customer['image']}}" class="rounded-circle img-fit"
-                         onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'">
+                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'">
                 </div>
                 <div class="media-body text-truncate">{{$customer['f_name']." ".$customer['l_name']}}</div>
             </a>

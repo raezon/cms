@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/third-party.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/third-party.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('third_party')}}
                 </span>
@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/assets/admin/img/icons/google.png')}}" alt="">
+                                <img src="{{asset('assets/admin/img/icons/google.png')}}" alt="">
                             </div>
                             <div class="text-center sub-txt text-capitalize">{{translate('google_login')}}</div>
                             <div class="custom--switch switch--right">
@@ -46,7 +46,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/assets/admin/img/icons/facebook.png')}}" alt="">
+                                <img src="{{asset('assets/admin/img/icons/facebook.png')}}" alt="">
                             </div>
                             <div class="text-center sub-txt text-capitalize">{{translate('facebook_login')}}</div>
                             <div class="custom--switch switch--right">

@@ -4,7 +4,7 @@
         <div class="avatar">
             <img class="img-fit rounded-circle"
                  src="{{asset('storage/app/public/profile/'.$user['image'])}}"
-                 onerror="this.src='{{asset('/assets/admin')}}/img/160x160/img1.jpg'"
+                 onerror="this.src='{{asset('assets/admin')}}/img/160x160/img1.jpg'"
                  alt="Image Description">
         </div>
         <div>
@@ -28,7 +28,7 @@
                                 @php($image_array = json_decode($con->image, true))
                                 @foreach($image_array as $image)
                                     <a href="{{$image}}" data-lightbox="{{$con->id . $image}}" >
-                                        <img class="rounded" src="{{$image}}" onerror="this.src='{{asset('/assets/admin/img/900x400/img1.jpg')}}'" />
+                                        <img class="rounded" src="{{$image}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" />
                                     </a><br>
                                @endforeach
                                 </div>
@@ -51,7 +51,7 @@
                                     @php($image_url = $image)
                                     <div class="col-12 @if(count(json_decode($con->image, true)) > 1) col-md-6 @endif">
                                         <a href="{{asset('storage/app/public/conversation').'/'.$image_url}}" data-lightbox="{{$con->id . $image_url }}" >
-                                            <img class="rounded" src="{{asset('storage/app/public/conversation').'/'.$image_url}}" onerror="this.src='{{asset('/assets/admin/img/900x400/img1.jpg')}}'" />
+                                            <img class="rounded" src="{{asset('storage/app/public/conversation').'/'.$image_url}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" />
                                         </a><br>
                                     </div>
                                 @endforeach
@@ -115,8 +115,8 @@
 
 
 </script>
-<script src="{{asset('/assets/admin')}}/js/tags-input.min.js"></script>
-<script src="{{asset('/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 <script>
     function spartanMultiImagePicker() {
         document.querySelector("#coba").innerHTML = "";
@@ -128,7 +128,7 @@
             groupClassName: 'col-lg-3 col-md-4 col-6',
             maxFileSize: '',
             {{--placeholderImage: {--}}
-                {{--    image: '{{asset('/assets/back-end/img/400x400/img2.jpg')}}',--}}
+                {{--    image: '{{asset('assets/back-end/img/400x400/img2.jpg')}}',--}}
                 {{--    width: '100%',--}}
                 {{--},--}}
             dropFileLabel: "Drop Here",

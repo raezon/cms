@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/product.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/product.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Product_List')}}
                 </span>
@@ -49,7 +49,7 @@
                                         <ul class="dropdown-menu dropdown-menu-right">
                                             <li>
                                                 <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.product.excel-import', ['search' => $search])}}">
-                                                    <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
+                                                    <img width="14" src="{{asset('assets/admin/img/icons/excel.png')}}" alt="">
                                                     {{translate('Excel')}}
                                                 </a>
                                             </li>
@@ -86,7 +86,7 @@
                                             <div class="media align-items-center gap-3">
                                                 <div class="avatar">
                                                     <img src="{{asset('storage/app/public/product')}}/{{$product['image']}}" class="rounded img-fit"
-                                                        onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'">
+                                                        onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
                                                 </div>
 
                                                 <div class="media-body">

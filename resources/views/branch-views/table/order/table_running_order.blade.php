@@ -15,14 +15,14 @@
                 <div class="col-6">
                     <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
                         <h2 class="h1 mb-0 d-flex align-items-center gap-1">
-                            <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/all_orders.png')}}" alt="">
+                            <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/all_orders.png')}}" alt="">
                             <span class="page-header-title">
                 {{translate('Table Orders')}}
                 </span>
                         </h2>
                         <span class="badge badge-soft-dark rounded-50 fz-14">{{$orders->total()}}</span>
                     </div>
-{{--                    <h2 class="">{{translate('Table Orders')}}<img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/all_orders.png')}}" alt=""> <span class="badge badge-soft-dark ml-2"></span></h2>--}}
+{{--                    <h2 class="">{{translate('Table Orders')}}<img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/all_orders.png')}}" alt=""> <span class="badge badge-soft-dark ml-2"></span></h2>--}}
                 </div>
 
             </div>

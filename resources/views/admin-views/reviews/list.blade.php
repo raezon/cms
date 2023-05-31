@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/review.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/review.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('product_review')}}
                 </span>
@@ -66,7 +66,7 @@
                                                     <a class="text-dark media align-items-center gap-2" href="{{route('admin.product.view',[$review['product_id']])}}">
                                                         <div class="avatar">
                                                             <img class="rounded-circle img-fit" src="{{asset('storage/app/public/product')}}/{{$review->product['image']}}" alt=""
-                                                                 onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'">
+                                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
                                                         </div>
                                                         <span class="media-body max-w220 text-wrap">{{$review->product['name']}}</span>
                                                     </a>

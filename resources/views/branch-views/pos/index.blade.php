@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <div id="loading" style="display: none;">
                     <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
-                        <img width="200" src="{{asset('/assets/admin/img/loader.gif')}}">
+                        <img width="200" src="{{asset('assets/admin/img/loader.gif')}}">
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                                             <div class="input-group-prepend pl-2">
                                                 <div class="input-group-text">
                                                     <!-- <i class="tio-search"></i> -->
-                                                    <img width="13" src="{{asset('/assets/admin/img/icons/search.png')}}" alt="">
+                                                    <img width="13" src="{{asset('assets/admin/img/icons/search.png')}}" alt="">
                                                 </div>
                                             </div>
                                             <input id="datatableSearch" type="search" value="{{$keyword?$keyword:''}}" name="search" class="form-control border-0" placeholder="{{translate('Search_here')}}" aria-label="Search here">
@@ -223,10 +223,10 @@
 <!-- JS Implementing Plugins -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <!-- JS Front -->
-<script src="{{asset('/assets/admin')}}/js/vendor.min.js"></script>
-<script src="{{asset('/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('/assets/admin')}}/js/toastr.js"></script>
+<script src="{{asset('assets/admin')}}/js/vendor.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/theme.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/sweet_alert.js"></script>
+<script src="{{asset('assets/admin')}}/js/toastr.js"></script>
 {{--{!! Toastr::message() !!}--}}
 
 @if ($errors->any())
@@ -645,7 +645,7 @@
 </script>
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 @endpush
 {{-- </body>

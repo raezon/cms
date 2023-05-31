@@ -13,7 +13,7 @@
                 <a class="d-flex justify-content-between align-items-center text-dark" href='{{route('admin.customer.view', [$item['user_id']])}}'>
                     <div class="media align-items-center gap-3">
                         <img class="rounded avatar avatar-lg"
-                                onerror="this.src='{{asset('/assets/admin/img/400x400/img2.jpg')}}'"
+                                onerror="this.src='{{asset('assets/admin/img/400x400/img2.jpg')}}'"
                                 src="{{asset('storage/app/public/profile'.'/'. $item->customer->image  ?? '' )}}">
                         <div class="media-body d-flex flex-column">
                             <span class="font-weight-semibold text-capitalize">{{$item->customer['f_name']??'Not exist'}}</span>

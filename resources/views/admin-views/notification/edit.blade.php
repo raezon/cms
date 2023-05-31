@@ -47,7 +47,7 @@
                                             <div class="upload-file">
                                                 <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
-                                                    <img width="465" onerror="this.src='{{asset('/assets/admin/img/icons/upload_img2.png')}}'"
+                                                    <img width="465" onerror="this.src='{{asset('assets/admin/img/icons/upload_img2.png')}}'"
                                                     src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}" alt="">
                                                 </div>
                                             </div>

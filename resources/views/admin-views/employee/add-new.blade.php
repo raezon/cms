@@ -3,7 +3,7 @@
 @section('title', translate('Employee Add'))
 
 @push('css_or_js')
-{{--    <link href="{{asset('/assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>--}}
+{{--    <link href="{{asset('assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>--}}
 {{--    <meta name="csrf-token" content="{{ csrf_token() }}">--}}
 @endpush
 
@@ -12,7 +12,7 @@
     <!-- Page Header -->
     <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
         <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-            <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/employee.png')}}" alt="">
+            <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/employee.png')}}" alt="">
             <span class="page-header-title">
                 {{translate('add_New_Employee')}}
             </span>
@@ -138,8 +138,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('/assets/admin/js/vendor.min.js')}}"></script>
-    <script src="{{asset('/assets/admin')}}/js/select2.min.js"></script>
+    <script src="{{asset('assets/admin/js/vendor.min.js')}}"></script>
+    <script src="{{asset('assets/admin')}}/js/select2.min.js"></script>
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -166,7 +166,7 @@
         });
     </script>
 
-    <script src="{{asset('/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -176,7 +176,7 @@
                 groupClassName: 'col-6 col-lg-4',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

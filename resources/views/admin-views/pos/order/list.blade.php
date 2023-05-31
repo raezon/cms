@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
             <h2 class="h1 mb-0 d-flex align-items-center gap-1">
-                <img width="20" class="avatar-img" src="{{asset('/assets/admin/img/icons/all_orders.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/all_orders.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('POS_Orders')}}
                 </span>
@@ -95,7 +95,7 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li>
                                     <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{ route('admin.pos.export-excel') }}?branch_id={{$branch_id}}&from={{$from}}&to={{$to}}&search={{$search}}">
-                                        <img width="14" src="{{asset('/assets/admin/img/icons/excel.png')}}" alt="">
+                                        <img width="14" src="{{asset('assets/admin/img/icons/excel.png')}}" alt="">
                                         {{ translate('Excel') }}
                                     </a>
                                 </li>
