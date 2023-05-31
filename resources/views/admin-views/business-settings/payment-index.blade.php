@@ -154,7 +154,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/razorpay.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/razorpay.png')}}" alt="">
                         </center>
 
                             @if(isset($config))
@@ -245,7 +245,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/stripe.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/stripe.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
@@ -291,7 +291,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/paystack.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/paystack.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
@@ -345,7 +345,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/senangpay.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/senangpay.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
@@ -390,7 +390,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/points.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/points.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="btn--container">
@@ -422,7 +422,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/bkash.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/bkash.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
@@ -477,7 +477,7 @@
                             </label>
                         </div>
                         <center class="mb-4">
-                            <img width="140" class="avatar-img" src="{{asset('/public/assets/admin/img/paymob.png')}}" alt="">
+                            <img width="140" class="avatar-img" src="{{asset('assets/admin/img/paymob.png')}}" alt="">
                         </center>
                             @if(isset($config))
                                 <div class="form-group">
